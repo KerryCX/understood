@@ -7,6 +7,7 @@
   --text-tertiary: #888888;
   --accent-rose: #e0607a;
   --accent-sage: #7aae8e;
+  --accent-rose-hover: rgba(224, 96, 122, 0.08);
 
   /* Difficulty */
   --feedback-easy-text: #4ade80;
@@ -45,6 +46,97 @@
   min-height: 100vh;
 }
 
+.page {
+  max-width: 720px;
+  padding: 40px 24px;
+  margin: 0 auto;
+}
+
 body {
   margin: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.card:hover {
+  background-color: var(--accent-rose-hover);
+  border-color: var(--accent-rose);
+}
+
+.cardLink {
+  color: var(--accent-rose);
+  text-decoration: none;
+}
+
+.cardLink::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.cardDescription {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.link {
+  color: var(--accent-rose);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.5rem;
+}
+
+.tagEasy {
+  background-color: var(--feedback-easy-bg);
+  color: var(--feedback-easy-text);
+}
+
+.tagArray {
+  background-color: var(--topic-array-bg);
+  color: var(--topic-array-text);
+}
+
+.tagHashMap {
+  background-color: var(--topic-hashmap-bg);
+  color: var(--topic-hashmap-text);
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
 }
