@@ -2,12 +2,12 @@ import styles from "./page.module.css";
 
 export default function TwoSumPage() {
   return (
-    <main className={styles.page}>
+    <main className='page'>
       <h1>Two Sum</h1>
-      <div className={styles.tags}>
-        <div className={`${styles.tag} ${styles.tagEasy}`}>Easy</div>
-        <div className={`${styles.tag} ${styles.tagHashMap}`}>Hash Map</div>
-        <div className={`${styles.tag} ${styles.tagArray}`}>Array</div>
+      <div className='tags'>
+        <div className={`tag tagEasy`}>Easy</div>
+        <div className={`tag tagHashMap`}>Hash Map</div>
+        <div className={`tag tagArray`}>Array</div>
       </div>
 
       <div className={styles.problemCard}>
@@ -31,7 +31,7 @@ export default function TwoSumPage() {
           href='https://leetcode.com/problems/two-sum/'
           target='_blank'
           rel='noopener noreferrer'
-          className={styles.leetcodeLink}
+          className='link'
         >
           View on LeetCode
         </a>
