@@ -1,49 +1,50 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: #111111;
+  --bg-surface: #1a1a1a;
+  --border-default: #2e2e2e;
+  --text-primary: #e5e5e5;
+  --text-secondary: #999999;
+  --text-tertiary: #888888;
+  --accent-rose: #e0607a;
+  --accent-sage: #7aae8e;
+
+  /* Difficulty */
+  --feedback-easy-text: #4ade80;
+  --feedback-easy-bg: rgba(74, 222, 128, 0.15);
+
+  --feedback-medium-text: #fbbf24;
+  --feedback-medium-bg: rgba(251, 191, 36, 0.15);
+
+  --feedback-hard-text: #f87171;
+  --feedback-hard-bg: rgba(248, 113, 113, 0.15);
+
+  /* Topics */
+  --topic-array-text: #60a5fa;
+  --topic-array-bg: rgba(96, 165, 250, 0.15);
+
+  --topic-hashmap-text: #c084fc;
+  --topic-hashmap-bg: rgba(192, 132, 252, 0.15);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Typography */
+:root {
+  --font-family: var(--font-inter), sans-serif;
+  --font-size-display: 52px; /* Hero name or large heading */
+  --font-size-heading: 32px; /* Section headings */
+  --font-size-subheading: 20px; /* Subheadings and card titles */
+  --font-size-body: 16px; /* Body text */
+  --font-size-label: 13px; /* Labels, navigation, buttons */
+  --font-size-caption: 12px; /* Metadata, timestamps, fine print */
 }
 
-html {
-  height: 100%;
+/* Base */
+.site {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  min-height: 100vh;
 }
 
-html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }

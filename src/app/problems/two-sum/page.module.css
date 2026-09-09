@@ -1,0 +1,59 @@
+.page {
+  max-width: 720px;
+  padding: 40px 24px;
+  margin: 0 auto;
+}
+
+.problemCard {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.sectionLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.5rem;
+}
+
+.tagEasy {
+  background-color: var(--feedback-easy-bg);
+  color: var(--feedback-easy-text);
+}
+
+.tagArray {
+  background-color: var(--topic-array-bg);
+  color: var(--topic-array-text);
+}
+
+.tagHashMap {
+  background-color: var(--topic-hashmap-bg);
+  color: var(--topic-hashmap-text);
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.leetcodeLink {
+  color: var(--accent-rose);
+  text-decoration: none;
+}
+
+.leetcodeLink:hover {
+  text-decoration: underline;
+}
