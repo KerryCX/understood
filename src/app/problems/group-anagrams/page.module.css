@@ -1,0 +1,65 @@
+.problemCard {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.sectionLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin: 0 0 12px;
+}
+
+.solutionTitle {
+  font-size: var(--font-size-subheading);
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.complexity {
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: var(--font-size-label);
+  color: var(--accent-sage);
+  margin: 0 0 12px;
+}
+
+.code {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-default);
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 16px 0;
+}
+
+.code:focus-visible {
+  outline: 2px solid var(--accent-rose);
+  outline-offset: 2px;
+}
+
+.inlineCode {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background-color: var(--bg-primary);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.list {
+  padding-left: 20px;
+  margin: 0 0 16px;
+}
+
+.list li {
+  margin-bottom: 8px;
+}
