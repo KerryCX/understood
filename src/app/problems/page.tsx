@@ -19,6 +19,20 @@ export default function ProblemsPage() {
             View problem
           </Link>
         </div>
+        <div className='card'>
+          <h2 className='cardTitle'>Group Anagrams</h2>
+          <div className='tags'>
+            <div className='tag tagMedium'>Medium</div>
+            <div className='tag tagHashMap'>Hash Map</div>
+            <div className='tag tagString'>String</div>
+          </div>
+          <p className='cardDescription'>
+            Group words that are made of the same letters in a different order.
+          </p>
+          <Link className='cardLink' href='/problems/group-anagrams'>
+            View problem
+          </Link>
+        </div>
       </div>
     </main>
   );

@@ -25,6 +25,9 @@
 
   --topic-hashmap-text: #c084fc;
   --topic-hashmap-bg: rgba(192, 132, 252, 0.15);
+
+  --topic-string-text: #2dd4bf;
+  --topic-string-bg: rgba(45, 212, 191, 0.15);
 }
 
 /* Typography */
@@ -125,6 +128,11 @@ body {
   color: var(--feedback-easy-text);
 }
 
+.tagMedium {
+  background-color: var(--feedback-medium-bg);
+  color: var(--feedback-medium-text);
+}
+
 .tagArray {
   background-color: var(--topic-array-bg);
   color: var(--topic-array-text);
@@ -133,6 +141,11 @@ body {
 .tagHashMap {
   background-color: var(--topic-hashmap-bg);
   color: var(--topic-hashmap-text);
+}
+
+.tagString {
+  background-color: var(--topic-string-bg);
+  color: var(--topic-string-text);
 }
 
 .tags {
