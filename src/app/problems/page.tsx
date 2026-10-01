@@ -33,6 +33,20 @@ export default function ProblemsPage() {
             View problem
           </Link>
         </div>
+        <div className='card'>
+          <h2 className='cardTitle'>Top K Frequent Elements</h2>
+          <div className='tags'>
+            <div className='tag tagMedium'>Medium</div>
+            <div className='tag tagHashMap'>Hash Map</div>
+            <div className='tag tagArray'>Array</div>
+          </div>
+          <p className='cardDescription'>
+            Find the k numbers that appear most often in an array.
+          </p>
+          <Link className='cardLink' href='/problems/top-k-frequent-elements'>
+            View problem
+          </Link>
+        </div>
       </div>
     </main>
   );
