@@ -28,6 +28,9 @@
 
   --topic-string-text: #2dd4bf;
   --topic-string-bg: rgba(45, 212, 191, 0.15);
+
+  --topic-bits-text: #fb923c;
+  --topic-bits-bg: rgba(251, 146, 60, 0.15);
 }
 
 /* Typography */
@@ -146,6 +149,11 @@ body {
 .tagString {
   background-color: var(--topic-string-bg);
   color: var(--topic-string-text);
+}
+
+.tagBitManipulation {
+  background-color: var(--topic-bits-bg);
+  color: var(--topic-bits-text);
 }
 
 .tags {
