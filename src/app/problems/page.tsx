@@ -47,6 +47,19 @@ export default function ProblemsPage() {
             View problem
           </Link>
         </div>
+        <div className='card'>
+          <h2 className='cardTitle'>Number of 1 Bits</h2>
+          <div className='tags'>
+            <div className='tag tagEasy'>Easy</div>
+            <div className='tag tagBitManipulation'>Bit Manipulation</div>
+          </div>
+          <p className='cardDescription'>
+            Count how many 1s are in a number&apos;s binary form.
+          </p>
+          <Link className='cardLink' href='/problems/number-of-1-bits'>
+            View problem
+          </Link>
+        </div>
       </div>
     </main>
   );

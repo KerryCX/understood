@@ -1,0 +1,140 @@
+.widget {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.instructions {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.bits {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 4px;
+  max-width: 480px;
+}
+
+.bit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-height: 64px;
+  padding: 8px 0;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-default);
+  border-radius: 6px;
+  color: var(--text-tertiary);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.bit:hover {
+  border-color: var(--accent-rose);
+}
+
+.bit:focus-visible,
+.control:focus-visible,
+.input:focus-visible {
+  outline: 2px solid var(--accent-rose);
+  outline-offset: 2px;
+}
+
+.bitOn {
+  background-color: rgba(122, 174, 142, 0.15);
+  border-color: var(--accent-sage);
+  color: var(--accent-sage);
+}
+
+.bitDigit {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.bitValue {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.resultLine {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.resultLabel {
+  min-width: 64px;
+  color: var(--text-secondary);
+}
+
+.resultValue {
+  color: var(--text-primary);
+  overflow-wrap: anywhere;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.control {
+  min-width: 48px;
+  min-height: 44px;
+  padding: 0 14px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-default);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: var(--font-size-body);
+  cursor: pointer;
+}
+
+.control:hover:not(:disabled) {
+  border-color: var(--accent-rose);
+}
+
+.control:disabled {
+  color: var(--text-tertiary);
+  cursor: not-allowed;
+}
+
+.inputLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: var(--font-size-label);
+  color: var(--text-secondary);
+}
+
+.input {
+  width: 96px;
+  min-height: 44px;
+  padding: 0 10px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-default);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: var(--font-size-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bit {
+    transition: none;
+  }
+}
