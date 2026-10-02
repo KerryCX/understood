@@ -21,6 +21,17 @@ updates:
           - "typescript-eslint"
       dev-dependencies:
         dependency-type: development
+    # Skip major versions of these until Next.js supports them.
+    # (TypeScript 7 and ESLint 10 break linting via eslint-config-next.)
+    # Minor and patch updates still come through.
+    # @types/node should match the Node version we run on, not the newest.
+    ignore:
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: github-actions
     directory: /
