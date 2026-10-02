@@ -1,0 +1,190 @@
+.problemCard {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.sectionLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin: 0 0 12px;
+}
+
+.solutionTitle {
+  font-size: var(--font-size-subheading);
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.complexity {
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: var(--font-size-label);
+  color: var(--accent-sage);
+  margin: 0 0 12px;
+}
+
+.code {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-default);
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 16px 0;
+}
+
+.code:focus-visible {
+  outline: 2px solid var(--accent-rose);
+  outline-offset: 2px;
+}
+
+.inlineCode {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background-color: var(--bg-primary);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.list {
+  padding-left: 20px;
+  margin: 0 0 16px;
+}
+
+.list li {
+  margin-bottom: 8px;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.tableWrap:focus-visible {
+  outline: 2px solid var(--accent-rose);
+  outline-offset: 2px;
+}
+
+.table {
+  border-collapse: collapse;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 14px;
+}
+
+.table caption {
+  text-align: left;
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.table th,
+.table td {
+  border: 1px solid var(--border-default);
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.table th {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.highlight {
+  color: var(--accent-sage);
+  font-weight: 600;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.question {
+  border: 1px solid var(--border-default);
+  border-radius: 6px;
+  background-color: var(--bg-primary);
+}
+
+.questionSummary {
+  color: var(--accent-rose);
+  cursor: pointer;
+  padding: 12px 16px;
+  min-height: 24px;
+}
+
+.questionSummary:hover {
+  background-color: var(--accent-rose-hover);
+}
+
+.questionSummary:focus-visible {
+  outline: 2px solid var(--accent-rose);
+  outline-offset: 2px;
+}
+
+.question[open] .questionSummary {
+  border-bottom: 1px solid var(--border-default);
+}
+
+.answer {
+  padding: 4px 16px 4px 16px;
+  border-left: 3px solid var(--accent-sage);
+  margin: 12px 16px;
+}
+
+.answer p {
+  margin: 0 0 8px;
+}
+
+.table th,
+.table td {
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .answer {
+    margin: 12px 8px;
+    padding: 4px 8px;
+  }
+}
+
+.table tbody th {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.halving {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 14px;
+  color: var(--accent-sage);
+  overflow-wrap: anywhere;
+}
+
+/* The growth table has wordy columns, so let them wrap */
+.growthTable th,
+.growthTable td {
+  white-space: normal;
+  text-align: left;
+  font-family: var(--font-family);
+  vertical-align: top;
+}
+
+.growthTable tbody th,
+.growthTable td:nth-child(4) {
+  white-space: nowrap;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.growthTable {
+  min-width: 600px;
+}
