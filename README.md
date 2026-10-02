@@ -29,6 +29,7 @@ Each problem lives at `/problems/[problem-name]`, containing:
 - My own solution, with a complexity write-up
 - My explain-back notes on how I reasoned through it
 - A second solution, for comparison
+- Where this shows up: real-world uses of the pattern, so I know when to reach for it
 
 ## Getting started
 

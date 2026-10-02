@@ -185,6 +185,34 @@ export default function GroupAnagramsPage() {
         </p>
       </section>
 
+      <section className={styles.problemCard} aria-labelledby='real-world'>
+        <h2 id='real-world' className={styles.sectionLabel}>
+          Where This Shows Up
+        </h2>
+        <ul className={styles.list}>
+          <li>
+            <strong>Cleaning up data.</strong> Treating &quot;Bristol&quot;,
+            &quot;bristol &quot; and &quot;BRISTOL&quot; as the same place, or
+            spotting duplicate contacts. Each entry gets a normalised key
+            (trimmed, lowercased) and anything with the same key is grouped.
+          </li>
+          <li>
+            <strong>Grouping results.</strong> Showing one product with all its
+            sizes and colours, or grouping search results that point at the
+            same thing.
+          </li>
+          <li>
+            <strong>Word game helpers.</strong> A Scrabble helper sorts the
+            letters on your rack and looks up every word with the same sorted
+            key, which is exactly this problem.
+          </li>
+        </ul>
+        <p>
+          The pattern: work out a key from each item on its own, then let a
+          hash map do the grouping.
+        </p>
+      </section>
+
       <section className={styles.problemCard} aria-labelledby='explain-back'>
         <h2 id='explain-back' className={styles.sectionLabel}>
           Explain-back Notes
