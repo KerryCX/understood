@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styles from "./page.module.css";
 import BitToggle from "./BitToggle";
 
@@ -289,11 +288,6 @@ const testQuestions = [
 export default function BinaryPage() {
   return (
     <main className='page'>
-      <p>
-        <Link href='/concepts' className='link'>
-          Concepts
-        </Link>
-      </p>
       <h1>Binary</h1>
 
       <section className={styles.problemCard} aria-labelledby='what'>
