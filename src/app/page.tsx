@@ -15,6 +15,16 @@ export default function Home() {
           </Link>
         </div>
         <div className='card'>
+          <h2 className='cardTitle'>Concepts</h2>
+          <p className='cardDescription'>
+            Notes on ideas I want to understand properly, so I can look back at
+            them
+          </p>
+          <Link className='cardLink' href='/concepts'>
+            View concepts
+          </Link>
+        </div>
+        <div className='card'>
           <h2 className='cardTitle'>Portfolio</h2>
           <p className='cardDescription'>Some work to showcase my skills</p>
           <a
