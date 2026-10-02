@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import SiteHeader from "./_components/SiteHeader";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -16,7 +17,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang='en' className={`site ${inter.variable}`}>
-      <body>{children}</body>
+      <body>
+        <SiteHeader />
+        <div id='main-content' tabIndex={-1} className='mainContent'>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

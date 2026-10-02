@@ -1,0 +1,112 @@
+.header {
+  border-bottom: 1px solid var(--border-default);
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  flex-wrap: wrap;
+}
+
+/* Breadcrumb trail */
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-label);
+  color: var(--text-secondary);
+}
+
+/* The slash is decoration, added with CSS */
+.crumb + .crumb::before {
+  content: "/";
+  margin: 0 8px;
+  color: var(--text-tertiary);
+}
+
+.home {
+  color: var(--text-primary);
+  font-size: var(--font-size-body);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Quiet grey links, so the only pink underline in the header is the
+   "you are here" marker on the section links. */
+.crumbLink {
+  color: var(--text-secondary);
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+
+.home:hover,
+.crumbLink:hover {
+  color: var(--accent-rose);
+  text-decoration: underline;
+}
+
+.currentCrumb {
+  color: var(--text-primary);
+}
+
+/* Section links */
+.links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: inline-block;
+  padding: 8px 0;
+  color: var(--text-secondary);
+  font-size: var(--font-size-label);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.link:hover {
+  color: var(--text-primary);
+}
+
+/* The current section gets an underline as well as a colour change,
+   so it doesn't rely on colour alone. */
+.link[aria-current="true"] {
+  color: var(--text-primary);
+  border-bottom-color: var(--accent-rose);
+}
+
+.home:focus-visible,
+.crumbLink:focus-visible,
+.link:focus-visible,
+.skipLink:focus-visible {
+  outline: 2px solid var(--accent-rose);
+  outline-offset: 2px;
+}
+
+/* Hidden until it gets keyboard focus, then appears top left */
+.skipLink {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  padding: 8px 12px;
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+  border-radius: 6px;
+  z-index: 10;
+}
+
+.skipLink:focus {
+  top: 12px;
+}

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styles from "./page.module.css";
 
 const growthRows = [
@@ -127,11 +126,6 @@ const testQuestions = [
 export default function BigOPage() {
   return (
     <main className='page'>
-      <p>
-        <Link href='/concepts' className='link'>
-          Concepts
-        </Link>
-      </p>
       <h1>Big O</h1>
 
       <section className={styles.problemCard} aria-labelledby='what'>
