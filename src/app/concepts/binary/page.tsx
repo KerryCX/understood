@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
+import BitToggle from "./BitToggle";
 
 const binaryToDecimalCode = `function binaryToDecimal(bits) {
   let total = 0;
@@ -340,6 +341,13 @@ export default function BinaryPage() {
           A byte is 8 bits. It&apos;s worth learning these 8 column values off
           by heart, because every conversion uses them.
         </p>
+      </section>
+
+      <section className={styles.problemCard} aria-labelledby='try-it'>
+        <h2 id='try-it' className={styles.sectionLabel}>
+          Try It
+        </h2>
+        <BitToggle />
       </section>
 
       <section className={styles.problemCard} aria-labelledby='to-decimal'>
