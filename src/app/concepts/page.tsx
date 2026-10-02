@@ -15,6 +15,16 @@ export default function ConceptsPage() {
             Read notes
           </Link>
         </div>
+        <div className='card'>
+          <h2 className='cardTitle'>Big O</h2>
+          <p className='cardDescription'>
+            How to describe and work out how much work code does as its input
+            grows, for time and space.
+          </p>
+          <Link className='cardLink' href='/concepts/big-o'>
+            Read notes
+          </Link>
+        </div>
       </div>
     </main>
   );
