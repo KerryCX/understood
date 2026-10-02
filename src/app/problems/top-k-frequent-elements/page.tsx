@@ -141,6 +141,33 @@ export default function TopKFrequentElementsPage() {
         </p>
       </section>
 
+      <section className={styles.problemCard} aria-labelledby='real-world'>
+        <h2 id='real-world' className={styles.sectionLabel}>
+          Where This Shows Up
+        </h2>
+        <ul className={styles.list}>
+          <li>
+            <strong>Trending and popular lists.</strong> Trending hashtags,
+            most-searched terms, or the best-selling products this week. Sites
+            like these count millions of items, which is when O(n) instead of
+            O(n log n) starts to matter.
+          </li>
+          <li>
+            <strong>Autocomplete.</strong> Showing the few suggestions people
+            pick most often for what you&apos;ve typed so far.
+          </li>
+          <li>
+            <strong>Review summaries.</strong> The bar chart of 1 to 5 star
+            ratings on a product page is bucket sort in miniature: the ratings
+            have a known maximum, so each one drops straight into its bucket.
+          </li>
+        </ul>
+        <p>
+          The pattern: count with a hash map, and when the values have a known
+          maximum, use them as array indexes instead of sorting.
+        </p>
+      </section>
+
       <section className={styles.problemCard} aria-labelledby='explain-back'>
         <h2 id='explain-back' className={styles.sectionLabel}>
           Explain-back Notes
